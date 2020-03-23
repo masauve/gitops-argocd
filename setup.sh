@@ -31,15 +31,14 @@ if [[ "$usebranch" == "n" ]]; then
 fi
 echo "Using branch $GIT_REF"
 
-read -p 'Base apps url (e.g. apps.ocp.pitt.ca): ' APPS_BASE_URL
-read -p 'Quay read/write username: ' quayrwuser
-read -p 'Quay read/write email: ' quayrwemail
-read -sp 'Quay read/write password: ' quayrwpass
-echo ""
-read -p 'Quay read-only username: ' quayrouser
-read -p 'Quay read-only email: ' quayroemail
-read -sp 'Quay read-only password: ' quayropass
-echo ""
+APPS_BASE_URL=apps.cl1.myocp.net
+quayrwuser=msauve
+quayrwemail=msauve@redhat.com
+quayrwpass=Papalet1_
+
+quayrouser=msauve
+quayroemail=msauve@redhat.com
+quayropass=Papalet1_
 
 echo "Setting git branch."
 if [[ "$GIT_REF" == "master" ]]; then
