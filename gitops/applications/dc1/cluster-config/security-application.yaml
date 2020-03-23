@@ -10,7 +10,7 @@ spec:
   project: config-project
   source:
     path: gitops/resources/security
-    repoURL: git.url.git
+    repoURL: https://github.com/masauve/gitops-argocd
     targetRevision: master
   syncPolicy:
     automated:
@@ -23,5 +23,5 @@ spec:
         server: https://kubernetes.default.svc
       source:
         path: gitops/resources/security
-        repoURL: git.url.git
+        repoURL: https://github.com/masauve/gitops-argocd
         targetRevision: master
